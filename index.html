@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Deepthi Jammula - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Sai Deepthi Jammula</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome! I'm <span>Sai Deepthi Jammula</span></h2>
+            <p>Software Engineer | Cloud Enthusiast | Problem Solver</p>
+            <img src="images/hero-animation.gif" alt="Hero Animation" class="hero-gif">
+            <a href="#projects" class="btn">Check My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-container">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I'm a graduate computer science student at Purdue University Northwest with experience 
+                    in developing solutions using cloud platforms, machine learning, and full-stack development. 
+                    Currently, I work at Credit Karma, building impactful financial tools.
+                </p>
+                <p>Passionate about delivering scalable solutions that make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>AWS, GCP</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <h3>Programming</h3>
+                    <p>Python, Java, C++</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>MySQL, PostgreSQL</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>React.js, Express.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="images/project1.gif" alt="Efficient Pathfinding" class="project-gif">
+                    <h3>Efficient Pathfinding</h3>
+                    <p>
+                        Optimized US city map navigation using Prim's and Dijkstra's algorithms, 
+                        improving route calculation by 25%.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="images/project2.gif" alt="Road Crack Detection" class="project-gif">
+                    <h3>Road Crack Detection</h3>
+                    <p>
+                        Achieved 90% accuracy in detecting road cracks using VGG16, PyTorch, and TensorFlow.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="images/project3.gif" alt="Healthcare Analysis" class="project-gif">
+                    <h3>Healthcare Data Analysis</h3>
+                    <p>
+                        Built a GCP-based dashboard for real-time analysis and predictive modeling of healthcare metrics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sai Deepthi Jammula. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
