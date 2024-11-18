@@ -1,87 +1,95 @@
-/* General Styling */
+/* Base Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #333;
-    background: #f4f4f9;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  scroll-behavior: smooth;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  z-index: 10;
 }
 
-/* Navbar */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #333;
-    color: white;
-    padding: 1rem;
-    z-index: 1000;
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
+.navbar ul li {
+  margin: 0 15px;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s ease;
+.navbar ul li a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header a:hover {
-    background: #ff5733;
-    color: white;
-    border-radius: 5px;
+/* Section Styling */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 2rem;
 }
 
-/* Hero Section */
-#hero {
-    text-align: center;
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #333, #555);
-    color: white;
+/* Dynamic Text Colors */
+.section h2, 
+.section p, 
+.section ul, 
+.section form {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-#hero h2 span {
-    color: #ff5733;
+/* Specific Sections */
+#home {
+  background-image: url('https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif'); /* Tech particles */
 }
 
-.hero-gif {
-    max-width: 300px;
-    margin: 20px auto;
+#about {
+  background-image: url('https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif'); /* Flowing lights */
 }
 
-/* Projects Section */
-.projects-grid .project {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 8px;
-    background: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#skills {
+  background-image: url('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif'); /* Coding cat */
 }
 
-.project-section {
-    background-image: url('https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
+#education {
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzA2bzd6Yjduc2QxZm8yNHJxdGtmcmJuZ2FldzJkNGd4bW5jMTRkaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8t7lXR6Sep8zB6v7El/giphy.webp'); /* New classroom GIF */
 }
 
-.projects-grid .project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+#projects {
+  background-image: url('https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif'); /* Abstract animations */
 }
 
-.project-gif {
-    max-width: 100%;
-    border-radius: 8px;
+#contact {
+  background-image: url('https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif'); /* New email/communication GIF */
+}
+
+/* Responsive Text for Overlapping */
+.section h2:hover, 
+.section p:hover, 
+.section ul:hover, 
+.section form:hover {
+  color: #ffda79; /* Bright highlight color */
+  transition: color 0.3s ease-in-out;
 }
