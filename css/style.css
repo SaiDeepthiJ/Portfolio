@@ -70,6 +70,12 @@ header a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-section {
+    background-image: url('https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .projects-grid .project:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
